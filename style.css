@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    min-width: 0;
+}
+
+button {
+    border: none;
+    padding: 12px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #667eea;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+#list {
+    list-style: none;
+}
+
+#list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #f4f5fa;
+    border-radius: 8px;
+}
+
+#list li span {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+#list li.done span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+#list li button {
+    padding: 8px 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+#count {
+    color: #555;
+}
+
+#clearCompleted {
+    background: #e74c3c;
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 18px;
+    }
+
+    form {
+        flex-wrap: wrap;
+    }
+
+    form input {
+        width: 100%;
+    }
+}
